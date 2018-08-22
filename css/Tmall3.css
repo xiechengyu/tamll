@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+body{
+    /*background: lightgray;*/
+    /*background: lightsteelblue;*/
+
+    background: rgb(245,245,245);
+}
+/*轮播*/
+.tmall-middle .carousel{
+    width: 100%;
+    height: 500px;
+    background: rgba(240,240,240);
+    position: relative;
+}
+/*轮播内容*/
+.tmall-middle .carousel .lb{
+    width: 1130px;
+    height: 500px;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.tmall-middle .carousel .pic{
+    width: 9040px;
+    height: 500px;
+    position: absolute;
+}
+.tmall-middle .carousel img{
+    width: 1130px;
+    height: 500px;
+    background: #000;
+    float: left;
+}
+.tmall-middle .carousel ul{
+    list-style:none;
+}
+/*指示灯*/
+.tmall-middle .carousel .buttons{
+    width: 180px;
+    height: 5px;
+    position: absolute;
+    top:95%;
+    left: 50%;
+    margin-left: -75px;
+    text-align: center;
+    z-index: 99;
+}
+.tmall-middle .carousel .buttons li{
+    width: 25px;
+    height: 5px;
+    background: #000;
+    opacity: 0.4;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.tmall-middle .carousel .buttons .bactive{
+    background: #fff;
+    opacity: 0.4;
+}
+
+/*专属活动*/
+.content-top .zshd{
+    width: 1230px;
+    height: 170px;
+    margin:0 auto;
+    /*background: lightgreen;*/
+    position: relative;
+}
+.content-top .zshd .zshdtop{
+    width: 100%;
+    height: 40px;
+    /*background: lightcoral;*/
+    position: relative;
+}
+.content-top .zshd .zshdtop .hrl{
+    width: 403px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    line-height: 40px;
+    border-bottom:1px solid;
+    background: #000;
+    opacity: 0.1;
+}
+.content-top .zshd .zshdtop .hrr{
+    width: 403px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    line-height: 40px;
+    border-bottom:1px solid;
+    background: #000;
+    opacity: 0.1;
+}
+.content-top .zshd .zshdtop .fontzshd{
+    font-size:18px ;
+    text-align: center;
+    color: #ff0036;
+    line-height: 40px;
+}
+.content-top .zshd .zshdbot{
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.content-top .zshd .zshdbot img{
+    width: 238px;
+    height: 130px;
+}
+.content-top .zshd .zshdbot img:hover{
+    opacity: 0.6;
+}
+.content-top .zshd .zshdbot a{
+    width: 238px;
+    height: 130px;
+    float: left;
+    margin-left: 10px;
+}
+.content-top .zshd .zshdbot a:nth-child(1){
+    margin-left: 0;
+}
+
+/*品牌*/
+.content-top .pp{
+    width:1230px;
+    height: 371px;
+    margin:20px auto;
+    position: relative;
+}
+.content-top .pp .head{
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+.content-top .pp .head .fontc{
+    color:#333;
+    font-weight: bold;
+    font-size: 18px;
+    line-height:55px;
+    margin-left: 10px;
+    float: left;
+}
+.content-top .pp .head .fonte{
+    color:#333;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 55px;
+    margin-left: 10px;
+}
+.content-top .pp img{
+    width: 100%;
+    height: 316px;
+}
+.content-top .pp img:hover{
+    opacity: 0.6;
+}
+.content-top .pp .more{
+    width: 42px;
+    height: 55px;
+    color: #666;
+    position: absolute;
+    right:25px;
+    top: 0;
+    font-size: 16px;
+    line-height: 55px;
+}
+.content-top .pp .glyphicon-play-circle{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 55px;
+    font-size: 16px;
+    color: #666;
+}
+/*品牌闪购*/
+.content-top .pp .ppsg{
+    width: 234px;
+    height: 371px;
+    background: #fff;
+}
+
+/*聚名品*/
+.content-top .pp .jmp{
+    width: 485px;
+    height: 371px;
+    position: absolute;
+    top: 0;
+    left: 246px;
+    background: #fff;
+}
+
+/*品牌活动*/
+.content-top .pp .pphd{
+    width: 485px;
+    height: 371px;
+    position: absolute;
+    top: 0;
+    left: 745px;
+    background: #fff;
+}
+
+/*侧边导航*/
+.aside{
+    display:none;
+    height: 369px;
+    width: 35px;
+    position: fixed;
+    left: 8.5%;
+    top: 30%;
+    background: white;
+    overflow: hidden;
+    z-index: 1;
+}
+.aside .dhk{
+    width: 36px;
+    height: 36px;
+    background: rgba(0,0,0,0.6);
+    margin-top: 1px;
+    position: relative;
+    text-align: center;
+    /*cursor: pointer;*/
+}
+.aside .dhk:nth-child(2):hover{
+    background:lightgreen;
+}
+.aside .dhk:nth-child(3):hover{
+    background:#000;
+}
+.aside .dhk:nth-child(4):hover{
+    background:pink;
+}
+.aside .dhk:nth-child(5):hover{
+    background:deepskyblue;
+}
+.aside .dhk:nth-child(6):hover{
+    background:lightgreen;
+}
+.aside .dhk:nth-child(7):hover{
+    background:lightcoral;
+}
+.aside .dhk:nth-child(8):hover{
+    background:lightblue;
+}
+.aside .dhk:nth-child(9):hover{
+    background:#000;
+}
+.aside .dhk:first-child{
+    margin-top: 0;
+    background: #ff0036;
+}
+.aside .dhk:last-child{
+    background: rgba(0,0,0,0.3);
+}
+.aside .dhk a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 13px;
+    margin:6px auto;
+    line-height: 14px;
+}
+.aside a:hover{
+    text-decoration: none;
+}
+.aside .dhk .firsta{
+    margin-top: 12px;
+}
+.aside .dhk span{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: 5px;
+}
+.aside .dhk .lasta{
+    margin-top: 20px;
+}
